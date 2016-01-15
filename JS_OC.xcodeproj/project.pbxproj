@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		AE7DBDA61C478DCA00C4F5D7 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7DBDA51C478DCA00C4F5D7 /* ThirdViewController.m */; };
 		AE7DBDA81C47909F00C4F5D7 /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = AE7DBDA71C47909F00C4F5D7 /* demo.html */; };
+		AED41EC21C48E1250068D1CF /* FourWeChatSnowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AED41EC11C48E1250068D1CF /* FourWeChatSnowViewController.m */; };
+		AED41EC61C48E2750068D1CF /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = AED41EC31C48E2750068D1CF /* coin.png */; };
+		AED41EC71C48E2750068D1CF /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = AED41EC41C48E2750068D1CF /* index.html */; };
+		AED41EC81C48E2750068D1CF /* packet.png in Resources */ = {isa = PBXBuildFile; fileRef = AED41EC51C48E2750068D1CF /* packet.png */; };
 		B93B1C8E1BEDC7D7009C86FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B93B1C8D1BEDC7D7009C86FA /* main.m */; };
 		B93B1C911BEDC7D7009C86FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B93B1C901BEDC7D7009C86FA /* AppDelegate.m */; };
 		B93B1C971BEDC7D7009C86FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B93B1C951BEDC7D7009C86FA /* Main.storyboard */; };
@@ -29,6 +33,11 @@
 		AE7DBDA41C478DCA00C4F5D7 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		AE7DBDA51C478DCA00C4F5D7 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		AE7DBDA71C47909F00C4F5D7 /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
+		AED41EC01C48E1250068D1CF /* FourWeChatSnowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourWeChatSnowViewController.h; sourceTree = "<group>"; };
+		AED41EC11C48E1250068D1CF /* FourWeChatSnowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourWeChatSnowViewController.m; sourceTree = "<group>"; };
+		AED41EC31C48E2750068D1CF /* coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin.png; sourceTree = "<group>"; };
+		AED41EC41C48E2750068D1CF /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		AED41EC51C48E2750068D1CF /* packet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = packet.png; sourceTree = "<group>"; };
 		B93B1C891BEDC7D7009C86FA /* JS_OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JS_OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B93B1C8D1BEDC7D7009C86FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B93B1C8F1BEDC7D7009C86FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -97,6 +106,11 @@
 				AE7DBDA41C478DCA00C4F5D7 /* ThirdViewController.h */,
 				AE7DBDA51C478DCA00C4F5D7 /* ThirdViewController.m */,
 				AE7DBDA71C47909F00C4F5D7 /* demo.html */,
+				AED41EC01C48E1250068D1CF /* FourWeChatSnowViewController.h */,
+				AED41EC11C48E1250068D1CF /* FourWeChatSnowViewController.m */,
+				AED41EC31C48E2750068D1CF /* coin.png */,
+				AED41EC41C48E2750068D1CF /* index.html */,
+				AED41EC51C48E2750068D1CF /* packet.png */,
 				B93B1C951BEDC7D7009C86FA /* Main.storyboard */,
 				B93B1C981BEDC7D7009C86FA /* Assets.xcassets */,
 				B93B1C9A1BEDC7D7009C86FA /* LaunchScreen.storyboard */,
@@ -172,6 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B93B1C9C1BEDC7D7009C86FA /* LaunchScreen.storyboard in Resources */,
+				AED41EC81C48E2750068D1CF /* packet.png in Resources */,
+				AED41EC61C48E2750068D1CF /* coin.png in Resources */,
 				B93B1CAA1BEDC982009C86FA /* First.html in Resources */,
 				B93B1C991BEDC7D7009C86FA /* Assets.xcassets in Resources */,
 				B93B1C971BEDC7D7009C86FA /* Main.storyboard in Resources */,
@@ -179,6 +195,7 @@
 				B99434C11BF24B27005579DD /* Simulator Screen 22.png in Resources */,
 				B99434C01BF24B27005579DD /* Simulator Screen 12.png in Resources */,
 				B93B1CAC1BEDC9B8009C86FA /* Second.html in Resources */,
+				AED41EC71C48E2750068D1CF /* index.html in Resources */,
 				B99434BE1BF24B27005579DD /* Simulator Screen 21.png in Resources */,
 				AE7DBDA81C47909F00C4F5D7 /* demo.html in Resources */,
 			);
@@ -196,6 +213,7 @@
 				B93B1C911BEDC7D7009C86FA /* AppDelegate.m in Sources */,
 				B93B1CA51BEDC916009C86FA /* FirstViewController.m in Sources */,
 				B93B1C8E1BEDC7D7009C86FA /* main.m in Sources */,
+				AED41EC21C48E1250068D1CF /* FourWeChatSnowViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

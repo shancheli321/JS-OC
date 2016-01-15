@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>红包</title>
+
+  <style type="text/css">
+
+    body {
+        text-align: center;
+    }
+
+    .bground {
+
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+
+    .bground .bgimg {
+
+      width: 100%;
+      height: 100%;
+    }
+
+    .bground .packet {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 250px;
+      height: 260px;
+      margin-left: -125px;
+      margin-top: -130px;
+    }
+
+    .packet img {
+
+      width: 250px;
+      height: 260px;
+    }
+  </style>
+
+  <script type="text/javascript">
+      var messagingIframe;
+      messagingIframe = document.createElement('iframe');
+      messagingIframe.style.display = 'none';
+      document.documentElement.appendChild(messagingIframe);
+      
+    function funopen(){
+
+      alert('啦啦啦');
+    }
+  
+    function mytoast(msg){
+      alert(msg);
+      
+    }
+  
+    function nativetoast(){
+
+      messagingIframe.src = "window.nativeapi.nativeaction()";
+    }
+  </script>
+</head>
+
+<body>
+
+    <div class="content">
+
+      <div class="bground">
+
+        <img src="bg.jpg" class="bgimg"/>
+
+        <div class="packet">
+          <img src="packet.png" class="packimg" onclick="nativetoast()"/>
+        </div>
+
+      </div>
+
+    </div>
+</body>
+
+</html>

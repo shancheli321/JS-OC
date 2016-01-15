@@ -42,11 +42,17 @@
 {
     NSURL * url = [request URL];
    if ([[url scheme] isEqualToString:@"firstclick"]) {
+       
+       NSLog(@"query:%@",url.query);
+       
         NSArray *params =[url.query componentsSeparatedByString:@"&"];
         
         NSMutableDictionary *tempDic = [NSMutableDictionary dictionary];
         for (NSString *paramStr in params) {
             NSArray *dicArray = [paramStr componentsSeparatedByString:@"="];
+            
+            NSLog(@"dicArray:%@",dicArray);
+            
             if (dicArray.count > 1) {
                 NSString *decodeValue = [dicArray[1] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
                 [tempDic setObject:decodeValue forKey:dicArray[0]];

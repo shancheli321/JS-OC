@@ -20,11 +20,12 @@
                         <segue destination="Di6-Jb-F3w" kind="relationship" relationship="viewControllers" id="vAO-8e-2uh"/>
                         <segue destination="ofQ-vc-nej" kind="relationship" relationship="viewControllers" id="0BG-qD-P6G"/>
                         <segue destination="UO2-AW-YJ8" kind="relationship" relationship="viewControllers" id="IjT-ap-XtL"/>
+                        <segue destination="b9j-La-MFp" kind="relationship" relationship="viewControllers" id="7de-pk-EWQ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yuI-WX-dWn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-888" y="581"/>
+            <point key="canvasLocation" x="-886" y="979"/>
         </scene>
         <!--方式一-->
         <scene sceneID="PzU-kF-ldM">
@@ -75,11 +76,30 @@
             </objects>
             <point key="canvasLocation" x="173" y="-167"/>
         </scene>
-        <!--Item-->
+        <!--方式四-->
+        <scene sceneID="G9J-GJ-aUr">
+            <objects>
+                <navigationController id="b9j-La-MFp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="方式四" id="ySD-oI-ncy"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CoP-lW-ySk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="32e-UW-nng" kind="relationship" relationship="rootViewController" id="PU9-47-7SQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KhQ-Zs-Vr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-386" y="1814"/>
+        </scene>
+        <!--方式三-->
         <scene sceneID="m6X-gU-Ub4">
             <objects>
                 <navigationController id="UO2-AW-YJ8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="l9g-Kg-FFC"/>
+                    <tabBarItem key="tabBarItem" title="方式三" id="l9g-Kg-FFC"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="luX-Ns-VRp">
@@ -94,7 +114,7 @@
             </objects>
             <point key="canvasLocation" x="-386" y="1152"/>
         </scene>
-        <!--Third View Controller-->
+        <!--方式三-->
         <scene sceneID="VAb-3y-vJr">
             <objects>
                 <viewController id="eeL-YY-xhN" customClass="ThirdViewController" sceneMemberID="viewController">
@@ -119,7 +139,7 @@
                             <constraint firstItem="f2O-lv-c6m" firstAttribute="top" secondItem="4K1-7Z-2BV" secondAttribute="bottom" id="sQM-H6-1yH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ajv-J9-cpF"/>
+                    <navigationItem key="navigationItem" title="方式三" id="ajv-J9-cpF"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
@@ -179,5 +199,57 @@
             </objects>
             <point key="canvasLocation" x="173" y="506"/>
         </scene>
+        <!--Four We Chat Snow View Controller-->
+        <scene sceneID="krb-0s-LDH">
+            <objects>
+                <viewController id="32e-UW-nng" customClass="FourWeChatSnowViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WI4-Rg-Vts"/>
+                        <viewControllerLayoutGuide type="bottom" id="QmE-Bw-X7D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9tM-B7-Gpd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDg-0b-Nw0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNv-93-NpY">
+                                <rect key="frame" x="175" y="418" width="125" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="P4F-fi-SDZ"/>
+                                    <constraint firstAttribute="width" constant="125" id="uJI-VM-sKx"/>
+                                </constraints>
+                                <state key="normal" image="packet.png"/>
+                                <connections>
+                                    <action selector="openPacket:" destination="32e-UW-nng" eventType="touchUpInside" id="d5v-CB-gMo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rNv-93-NpY" secondAttribute="trailing" constant="20" id="AMf-6x-NBM"/>
+                            <constraint firstItem="QmE-Bw-X7D" firstAttribute="top" secondItem="rNv-93-NpY" secondAttribute="bottom" constant="20" id="B8C-fh-Rnh"/>
+                            <constraint firstItem="tDg-0b-Nw0" firstAttribute="leading" secondItem="9tM-B7-Gpd" secondAttribute="leading" id="JPk-ka-oCl"/>
+                            <constraint firstItem="tDg-0b-Nw0" firstAttribute="top" secondItem="9tM-B7-Gpd" secondAttribute="top" id="rTq-JY-sdq"/>
+                            <constraint firstAttribute="trailing" secondItem="tDg-0b-Nw0" secondAttribute="trailing" id="sKU-4i-8R3"/>
+                            <constraint firstAttribute="bottom" secondItem="tDg-0b-Nw0" secondAttribute="bottom" id="uLR-7G-Sz8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HIw-x1-MCD"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="web" destination="tDg-0b-Nw0" id="CN2-tS-y2h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Wl-PK-rOq" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173" y="1814"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="packet.png" width="500" height="520"/>
+    </resources>
 </document>

@@ -10,7 +10,7 @@
 #import <Foundation/NSObjCRuntime.h>
 #import <objc/runtime.h>
 
-@interface ThirdViewController ()
+@interface ThirdViewController ()<UIWebViewDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UIWebView *myWebView;
@@ -24,8 +24,8 @@
 {
     [super viewDidLoad];
     
-    
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"reload" style:UIBarButtonItemStylePlain target:self action:@selector(rightAction)];
+    self.myWebView.delegate = self;
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"reload" style:UIBarButtonItemStylePlain target:self action:@selector(thirdAction)];
     self.navigationItem.rightBarButtonItem = rightItem;
     
     
@@ -34,7 +34,7 @@
     
 }
 
--(void)rightAction
+-(void)thirdAction
 {
     //传输
     //NSString *temp = @"测试以下";
@@ -61,8 +61,11 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     
-    NSString *requestString = [[[request URL]  absoluteString] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding ];
+    NSURL* url = request.URL;
+    NSLog(@"url--%@",url);
     
+    NSString *requestString = [[[request URL]  absoluteString] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding ];
+    NSLog(@"requestString--%@",requestString);
     if ([requestString hasPrefix:@"myapp:"]) {
         NSLog(@"requestString:%@",requestString);
         //如果是自己定义的协议, 再截取协议中的方法和参数, 判断无误后在这里手动调用oc方法
