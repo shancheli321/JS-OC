@@ -21,7 +21,7 @@
     // Do any additional setup after loading the view.
     
     _webView.backgroundColor = [UIColor yellowColor];
-    _webView.backgroundColor = [UIColor greenColor];
+    _webView.backgroundColor = [UIColor greenColor];//push
 
     _webView.delegate = self;
     NSString *path = [[NSBundle mainBundle] pathForResource:@"First" ofType:@"html"];
